@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 class CinemaParser:
     '''Class Cinema'''
     def __init__(self, town='msk'):
-        '''Какой город''
+        '''Какой город'''
         self.city = town
         self.content = None
     def extract_raw_content(self):

@@ -13,8 +13,8 @@ class CinemaParser:
         self.content = waypage.text
     def print_raw_content(self):
         '''Выводит изъятую информацию со страницы'''
-        BS = BeautifulSoup(self.content)
-        print(BS.prettify())
+        soup = BeautifulSoup(self.content)
+        print(soup.prettify())
 TOWN_PARSER = CinemaParser('spb')
 TOWN_PARSER.extract_raw_content()
 TOWN_PARSER.print_raw_content()
